@@ -82,6 +82,9 @@ wss.on('connection',async (ws) => {
 app.get('/sleep', async (req, res) => {
   res.send({ type: true });
 });
+app.get('/', async (req, res) => {
+  res.send({ type: true });
+});
 app.post('/sleep', async (req, res) => {
   res.send({ type: true });
 });
